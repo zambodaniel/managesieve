@@ -1,0 +1,35 @@
+{
+    "name": "zambodaniel/managesieve",
+    "description": "Managesieve is a library to manage and modify sieve (RFC5228) scripts.",
+    "keywords": ["sieve", "filters", "mail", "managesieve"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/zambodaniel/managesieve",
+    "authors":
+    [
+        {
+            "name": "Daniel Zambo",
+            "homepage": "https://github.com/zambodaniel",
+            "email": "zambodaniel@gmail.com"
+        }
+    ],
+    "require":
+    {
+        "php": ">=7.0",
+        "ext-mbstring": "*",
+        "ext-sockets": "*",
+        "ext-openssl": "*",
+        "psr/log": "^1.0",
+        "pear/auth_sasl": "*"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Managesieve\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
